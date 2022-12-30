@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Biblioteca</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Biblioteca</h1>
+  </header>
+
+  <main>
+    <form>
+      <input id="titulo" type="text" placeholder="Nome do livro" required>
+      <input id="autor" type="text" placeholder="Nome do autor" required>
+      <input id="paginas" type="number" placeholder="Número de páginas" required>
+      <input id="lido" type="checkbox" required>
+      <label for="lido">Já foi lido?</label>
+      <button type="submit">Adicionar livro</button>
+    </form>
+
+    <table>
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Páginas</th>
+            <th>Lido?</th>
+            <td>Ações</td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p><a href="https://github.com/dev-math">@dev-math</a></p>
+  </footer>
+
+</body>
+
+</html>
