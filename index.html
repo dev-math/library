@@ -1,47 +1,62 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
+<!DOCTYPE html> <html lang="pt-br"> <head>
   <title>Biblioteca</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
-  <script src="main.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Poppins:wght@500&display=swap" rel="stylesheet" />
+
+  <link href="./style.css" rel="stylesheet" />
 </head>
 
 <body>
-  <header>
-    <h1>Biblioteca</h1>
+  <header class="primary-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <nav class="primary-navigation">
+          <ul aria-label="Primary" role="list" class="nav-list">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">My Shelf</a></li>
+            <li><a href="#">Browse</a></li>
+          </ul>
+        </nav>
+        <form class="nav-search">
+            <span class="nav-search-icon"></span>
+            <input aria-label="Search by book name, author, ..." id="nav-search" type="text" placeholder="Search by book name, author, ..."/>
+        </form>
+      </div>
+    </div>
   </header>
 
   <main>
-    <form>
-      <input id="titulo" type="text" placeholder="Nome do livro" required>
-      <input id="autor" type="text" placeholder="Nome do autor" required>
-      <input id="paginas" type="number" placeholder="Número de páginas" required>
-      <input id="lido" type="checkbox" required>
-      <label for="lido">Já foi lido?</label>
-      <button type="submit">Adicionar livro</button>
-    </form>
-
-    <table>
-        <thead>
-          <tr>
-            <th>Título</th>
-            <th>Autor</th>
-            <th>Páginas</th>
-            <th>Lido?</th>
-            <td>Ações</td>
-          </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+    <section>
+      <div class="container">
+        <div class="hero">
+          <div>
+            <h1 class="fs-primary-heading font-heading caps">Archive</h1>
+            <h2 class="fs-secondary-heading font-heading caps">The library</h2>
+            <p class="fs-body">
+              “Library - from the Latin liber, meaning "book." In Greek and
+              the Romance languages, the corresponding term is bibliotheca. A
+              collection or group of collections of books and/or other print
+              or nonprint materials organized and maintained for use
+            </p>
+            <button class="fs-button">Explore Catalogue</button>
+          </div>
+          <ul class"carousel">
+            <li><img src="images/book.png" alt="TODO"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p><a href="https://github.com/dev-math">@dev-math</a></p>
   </footer>
-
 </body>
 
 </html>
