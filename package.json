@@ -1,9 +1,9 @@
 {
   "name": "library",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:dev-math/library.git",
   "author": "Matheus Rocha <01devmath@gmail.com>",
+  "private": true,
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --mode development",
