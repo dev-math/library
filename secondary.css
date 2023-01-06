@@ -1,0 +1,33 @@
+.primary-footer {
+  flex-direction: row-reverse;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image: url("images/top-deco.svg");
+  background-position: right calc(var(--size-800) * -1) top
+    calc(var(--size-700) * -1);
+  background-repeat: no-repeat;
+  background-size: calc(var(--size-900) * 4.5) auto;
+}
+
+.bg-img-deco {
+  background-image: url("images/bottom-right-deco.svg");
+  background-position: right calc(var(--size-800) * -1) bottom; 
+}
+
+@media (min-width: 72em) {
+  .container {
+    --max-width: 1440px;
+    --container-padding: 3.75rem;
+    width: min(var(--max-width), 100% - (var(--container-padding) * 2));
+    margin-inline: auto;
+  }
+
+  .text-padding {
+    padding-right: calc(var(--size-900) * 4);
+  }
+}

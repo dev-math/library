@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Biblioteca</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Poppins:wght@500&display=swap" rel="stylesheet" />
+
+  <link href="./style.css" rel="stylesheet" />
+  <link href="./secondary.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="primary-header | pt-600">
+    <div class="container">
+      <div class="nav-wrapper">
+        <nav aria-label="Primary" class="primary-navigation">
+          <button class="btn mobile-nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+            <img class="icon-menu" src="images/menu-icon.svg" alt="" aria-hidden="true">
+            <img class="icon-close" src="images/close-icon.svg" alt="" aria-hidden="true">
+          </button>
+          <ul role="list" class="nav-list" id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="profile.html" class="active" aria-current="page">My Shelf</a></li>
+            <li><a href="browse.html">Browse</a></li>
+          </ul>
+        </nav>
+        <form class="nav-search">
+          <span class="nav-search-icon"></span>
+          <input class="fs-500 bg-accent-700 text-white border-none border-rounded w-full"
+            aria-label="Search by book name, author, ..." id="nav-search" type="text"
+            placeholder="Search by book name, author, ..." />
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container | pt-900">
+      <header>
+        <h1 class="fs-primary-heading inline font-heading caps">Archive</h1>
+      </header>
+      <section class="">
+        <h2 class="fs-secondary-heading">
+          Completed
+        </h2>
+
+        <ul class="pt-600" role="list">
+          <li>
+            <article style="width: fit-content">
+              <img class="rounded-tr-500" src="images/book2.png" alt="">
+              <div class="rounded-br-500 bg-accent-700 text-white flex flex-col p-200">
+                <h3 class="fs-400">Book to Space</h3>
+                <small class="fs-300">200 pages</small>
+                <footer class="flex justify-between">
+                  <p>
+                    <img src="images/star-icon.svg" class="inline" aria-hidden="true" alt="">
+                    4.8 <span class="visually-hidden">stars</span>
+                  </p>
+                  <button class="bg-none border-none">
+                    <img class="inline" src="images/heart-icon.svg" aria-hidden="true" alt="">
+                    <span class="visually-hidden">Favorite book</span>
+                  </button>
+                </footer>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="primary-footer">
+    <div class="bg-img-deco"></div>
+    <div class="container">
+      <p class="center-text pb-600">
+        Made by
+        <strong class="underline-accent-400"><a href="https://github.com/dev-math">@dev-math</a></strong>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
