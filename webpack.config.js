@@ -4,7 +4,7 @@ const path = require('path');
 const config = {
   entry: './src/index.jsx',
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
   resolve: {
@@ -32,6 +32,9 @@ const config = {
       directory: path.join(__dirname, 'public')
     },
     open: true,
+    devMiddleware: {
+      publicPath: '/dist',
+    },
   }
 };
 
