@@ -21,6 +21,10 @@ const config = {
         use: ["style-loader", "css-loader"],
         test: /\.css$/,
       },
+      {
+        test: /\.svg$/,
+        use: "file-loader",
+      },
     ],
   },
   devServer: {
@@ -33,6 +37,11 @@ const config = {
     devMiddleware: {
       publicPath: "/dist",
     },
+    historyApiFallback: true,
+  },
+  watchOptions: {
+    poll: 1000,
+    ignored: ["node_modules"],
   },
 };
 

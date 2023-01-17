@@ -1,0 +1,108 @@
+:root {
+  --fs-nav: var(--fs-600);
+}
+
+@media (max-width: 50em) {
+  :root {
+  --fs-nav: calc(var(--fs-600) * 0.85);
+  }
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: clamp(var(--size-400), 3vw, var(--size-700));
+}
+
+.nav-list {
+  display: flex;
+  font-size: var(--fs-nav);
+  gap: clamp(var(--size-400), 3vw, var(--size-700));
+}
+
+.nav-search {
+  position: relative;
+  flex: 1;
+}
+
+.nav-search input {
+  --icon-pos-x: var(--fs-400);
+  --padding-left: calc(var(--fs-nav) + var(--icon-pos-x) + 1em);
+  --padding-tb: var(--size-300); /* top and bottom */
+  background-color: var(--clr-accent-700);
+  background-image: url(search-icon.svg);
+  background-position: var(--icon-pos-x) var(--padding-tb);
+  background-size: repeat(2, var(--fs-nav));
+  background-repeat: no-repeat;
+  padding: var(--padding-tb) 0.75em var(--padding-tb) var(--padding-left);
+}
+
+.nav-search input::placeholder {
+  opacity: 1;
+}
+
+.nav-list .active {
+  border: 0;
+  border-radius: 100vmax;
+  padding: 0.5em 1.5em;
+  background-color: var(--clr-accent-100);
+}
+
+.mobile-nav-toggle {
+  margin-top: 0;
+  display: none;
+}
+
+@media (max-width: 50em) {
+  .nav-search {
+    width: 100%;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    z-index: 2;
+  }
+
+  .nav-list {
+    transform: translateX(200%);
+    position: fixed;
+  }
+
+  .mobile-nav-toggle[aria-expanded="false"] .icon-close {
+    display: none;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] .icon-close {
+    display: block;
+    z-index: 2;
+    position: fixed;
+    right: var(--size-600);
+  }
+
+  .nav-wrapper {
+    flex-direction: row-reverse;
+  }
+
+  .nav-list[data-visible] {
+    background: var(--clr-accent-700);
+    color: white;
+    padding: min(30vh, var(--size-900)) 2em;
+    text-align: center;
+    inset: 0 0 0 30%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    z-index: 1;
+    transform: translateX(0%);
+  }
+
+  .nav-list li {
+    margin-top: var(--size-600);
+  }
+
+  .active {
+    color: initial;
+  }
+}
