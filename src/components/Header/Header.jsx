@@ -30,7 +30,12 @@ const Header = () => {
                 aria-hidden="true"
               />
             </button>
-            <ul role="list" className="nav-list" id="nav-menu" {...menuExpanded && {'data-visible': ''}}>
+            <ul
+              role="list"
+              className="nav-list"
+              id="nav-menu"
+              {...(menuExpanded && { "data-visible": "" })}
+            >
               <li>
                 <a href="index.html" className="active" aria-current="page">
                   Home
