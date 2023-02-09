@@ -31,7 +31,7 @@
   --padding-left: calc(var(--fs-nav) + var(--icon-pos-x) + 1em);
   --padding-tb: var(--size-300); /* top and bottom */
   background-color: var(--clr-accent-700);
-  background-image: url(search-icon.svg);
+  background-image: url('./search-icon.svg');
   background-position: var(--icon-pos-x) var(--padding-tb);
   background-size: repeat(2, var(--fs-nav));
   background-repeat: no-repeat;
