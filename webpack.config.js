@@ -23,7 +23,7 @@ const config = {
       },
       {
         test: /\.svg$/,
-        use: "file-loader",
+        type: "asset/resource",
       },
     ],
   },
