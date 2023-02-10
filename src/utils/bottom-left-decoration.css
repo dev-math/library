@@ -1,0 +1,11 @@
+.bg-img-deco {
+  background-image: url("./bottom-left-decoration.svg");
+  background-position: left calc(var(--size-800) * -1) bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-size: calc(var(--size-900) * 4.5) auto; */
+  height: calc(var(--size-900) * 4.5);
+  width: calc(var(--size-900) * 4.5);
+  z-index: -1;
+  position: absolute;
+}

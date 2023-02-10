@@ -71,7 +71,7 @@ html:focus-within {
 }
 
 html,
-body {
+body, #root {
   height: 100%;
 }
 
@@ -84,6 +84,13 @@ body {
   font-weight: var(--fw-body);
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+}
+
+body, #root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  isolation: isolate;
 }
 
 /* A elements that don't have a class get default styles */
