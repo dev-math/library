@@ -76,7 +76,7 @@ body, #root {
 }
 
 /* Set core body defaults */
-body {
+body, #root {
   background-color: var(--clr-backround-primary);
   color: var(--clr-accent-700);
   font-family: var(--ff-body);

@@ -22,7 +22,7 @@ const config = {
         test: /\.css$/,
       },
       {
-        test: /\.svg$/,
+        test: /\.(png|svg)$/,
         type: "asset/resource",
       },
     ],
