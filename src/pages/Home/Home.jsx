@@ -1,12 +1,12 @@
 import React from "react";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 import bookImg from "./book.png";
 
-import "../../utils/bottom-left-decoration.css";
+import "@/utils/bottom-left-decoration.css";
 import "@splidejs/react-splide/css";
 import "./Home.css";
 
