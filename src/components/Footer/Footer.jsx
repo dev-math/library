@@ -9,7 +9,7 @@ const Footer = () => {
         <p className="center-text pb-600">
           Made by&nbsp;
           <strong className="underline-accent-400">
-            <a href="https://github.com/dev-math">@dev-math</a>
+            <a target="_blank" href="https://github.com/dev-math">@dev-math</a>
           </strong>
         </p>
       </div>
