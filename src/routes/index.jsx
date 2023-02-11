@@ -3,6 +3,7 @@ import React from "react";
 import { useRoutes, BrowserRouter } from "react-router-dom";
 
 import { Home } from "@/pages/Home";
+import { About } from "@/pages/About";
 
 const Routes = () => {
   return useRoutes([
@@ -12,15 +13,15 @@ const Routes = () => {
     },
     {
       path: "/about",
-      element: <h1>Header</h1>,
+      element: <About />
     },
     {
       path: "/browse",
-      element: <h1>Header</h1>,
+      element: <h1>Browse</h1>,
     },
     {
       path: "/profile",
-      element: <h1>Header</h1>,
+      element: <h1>Profile</h1>,
     },
   ]);
 };
