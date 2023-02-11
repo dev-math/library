@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+
 import "./Header.css";
 import menuIcon from "./menu-icon.svg";
 import closeIcon from "./close-icon.svg";
@@ -37,18 +39,16 @@ const Header = () => {
               {...(menuExpanded && { "data-visible": "" })}
             >
               <li>
-                <a href="index.html" className="active" aria-current="page">
-                  Home
-                </a>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <a href="about.html">About us</a>
+                <NavLink to="/about">About us</NavLink>
               </li>
               <li>
-                <a href="profile.html">My Shelf</a>
+                <NavLink to="/profile">My Shelf</NavLink>
               </li>
               <li>
-                <a href="browse.html">Browse</a>
+                <NavLink to="/browse">Browse</NavLink>
               </li>
             </ul>
           </nav>
