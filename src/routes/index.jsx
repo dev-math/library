@@ -4,6 +4,7 @@ import { useRoutes, BrowserRouter } from "react-router-dom";
 
 import { Home } from "@/pages/Home";
 import { About } from "@/pages/About";
+import { Login } from "@/pages/Login";
 
 const Routes = () => {
   return useRoutes([
@@ -23,6 +24,10 @@ const Routes = () => {
       path: "/profile",
       element: <h1>Profile</h1>,
     },
+    {
+      path: '/login',
+      element: <Login />
+    }
   ]);
 };
 
