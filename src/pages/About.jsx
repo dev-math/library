@@ -8,12 +8,14 @@ const About = () => {
       <Header />
       <main>
         <section>
-          <div class="container | pt-900">
-            <h1 class="fs-primary-heading inline font-heading caps">Archive</h1>
-            <h2 class="fs-secondary-heading inline font-heading caps">
+          <div className="container | pt-900">
+            <h1 className="fs-primary-heading inline font-heading caps">
+              Archive&nbsp;
+            </h1>
+            <h2 className="fs-secondary-heading inline font-heading caps">
               The library
             </h2>
-            <p class="text-padding">
+            <p className="text-padding">
               A library is a collection of materials, books or media that are
               accessible for use and not just for display purposes. A library
               provides physical (hard copies) or digital RR (soft copies)
@@ -23,7 +25,7 @@ const About = () => {
               cassette as well as access to information, music or other content
               held on bibliographic databases.
             </p>
-            <p class="text-padding">
+            <p className="text-padding">
               A library, which may vary widely in size, may be organized for use
               and maintained by a public body such as a government; an
               institution such as a school or museum; a corporation; or a
@@ -34,7 +36,7 @@ const About = () => {
               analyzing very large amounts of information with a variety of
               resources.
             </p>
-            <p class="text-padding">
+            <p className="text-padding">
               Library buildings often provide quiet areas for studying, as well
               as common areas for group study and collaboration, and may provide
               public facilities for access to their electronic resources; for
