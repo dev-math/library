@@ -37,10 +37,10 @@
 
 @media (max-width: 50em) {
   :root {
-  --fs-body: calc(var(--fs-600) * 0.85);
-  --fs-primary-heading: calc(var(--fs-900) * 0.85);
-  --fs-secondary-heading: calc(var(--fs-800) * 0.85);
-  --fs-button: calc(var(--fs-700) * 0.85);
+    --fs-body: calc(var(--fs-600) * 0.85);
+    --fs-primary-heading: calc(var(--fs-900) * 0.85);
+    --fs-secondary-heading: calc(var(--fs-800) * 0.85);
+    --fs-button: calc(var(--fs-700) * 0.85);
   }
 }
 
@@ -71,12 +71,14 @@ html:focus-within {
 }
 
 html,
-body, #root {
+body,
+#root {
   height: 100%;
 }
 
 /* Set core body defaults */
-body, #root {
+body,
+#root {
   background-color: var(--clr-backround-primary);
   color: var(--clr-accent-700);
   font-family: var(--ff-body);
@@ -86,7 +88,8 @@ body, #root {
   line-height: 1.5;
 }
 
-body, #root {
+body,
+#root {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -211,12 +214,24 @@ svg {
   border-radius: 100vmax;
 }
 
+.border-white {
+  border: 1px solid white;
+}
+
+.rounded-200 {
+  border-radius: var(--size-200);
+}
+
 .rounded-tr-500 {
   border-top-right-radius: var(--size-500);
 }
 
 .rounded-br-500 {
   border-bottom-right-radius: var(--size-500);
+}
+
+.block {
+  display: block;
 }
 
 .inline {
@@ -239,6 +254,10 @@ svg {
   width: 100%;
 }
 
+.max-w-xl {
+  max-width: calc(var(--size-900) * 4);
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -248,12 +267,40 @@ svg {
   margin-bottom: var(--size-500);
 }
 
+.mt-300 {
+  margin-top: var(--size-300);
+}
+
 .mt-700 {
   margin-top: var(--size-700);
 }
 
+.py-100 {
+  padding-top: var(--size-100);
+  padding-bottom: var(--size-100);
+}
+
+.py-200 {
+  padding-top: var(--size-200);
+  padding-bottom: var(--size-200);
+}
+
+.px-200 {
+  padding-left: var(--size-200);
+  padding-right: var(--size-200);
+}
+
+.px-300 {
+  padding-left: var(--size-300);
+  padding-right: var(--size-300);
+}
+
 .p-200 {
   padding: var(--size-200);
+}
+
+.p-400 {
+  padding: var(--size-400);
 }
 
 .pb-600 {
@@ -270,4 +317,13 @@ svg {
 
 .pt-900 {
   padding-top: var(--size-900);
+}
+
+.appearance-none {
+  appearance: none;
+}
+
+.drop-shadow {
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
 }

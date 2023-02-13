@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import Input from "@/components/Input";
 
 const Login = () => {
   return (
@@ -8,23 +9,30 @@ const Login = () => {
       <Header />
       <main>
         <section>
-          <div class="container | pt-900">
-            <h1 class="fs-primary-heading inline font-heading caps">Archive</h1>
-            <h2 class="fs-secondary-heading inline font-heading caps">
+          <div className="container | pt-900">
+            <h1 className="fs-primary-heading inline font-heading caps">
+              Archive&nbsp;
+            </h1>
+            <h2 className="fs-secondary-heading inline font-heading caps">
               The library
             </h2>
 
-            <form className="flex flex-col w-full bg-accent-700 text-white">
-              <label for="email">Email</label>
-              <input
+            <form className="flex flex-col w-full max-w-xl p-400 drop-shadow rounded-200 bg-accent-700 text-white">
+              <Input
+                label="Email"
                 type="email"
                 name="email"
                 placeholder="john@doe.com"
                 required
               />
-              <label for="password">Password</label>
-              <input type="password" name="password" required />
-              <button className="btn mt-700" type="submit">
+              <Input
+                label="Password"
+                type="password"
+                name="password"
+                placeholder="***"
+                required
+              />
+              <button className="btn mt-700 bg-accent-700 border-white" type="submit">
                 Login
               </button>
             </form>
