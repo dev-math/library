@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 
 import bookImg from "./book.png";
 
-import "@/utils/bottom-left-decoration.css";
+import "@/assets/bottom-left-decoration.css";
 import "@splidejs/react-splide/css";
 import "./Home.css";
 
