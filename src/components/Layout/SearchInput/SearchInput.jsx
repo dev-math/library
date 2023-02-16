@@ -6,7 +6,7 @@ export const SearchInput = () => {
   return (
     <form action="/search" role="search" className="nav-search" aria-label="Books">
       <span className="nav-search-icon" aria-hidden="true"></span>
-      <label className="visually-hidden" for="nav-search">
+      <label className="visually-hidden" htmlFor="nav-search">
         Search books by title, author, ...
       </label>
       <input
