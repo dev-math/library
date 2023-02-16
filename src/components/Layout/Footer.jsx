@@ -1,15 +1,17 @@
 import React from "react";
-import "./Footer.css";
+import { Link } from "@/components/Elements";
 
 const Footer = () => {
   return (
-    <footer className="primary-footer">
+    <footer className="primary-footer | flex grow items-end">
       <div className="bg-img-deco"></div>
       <div className="container">
         <p className="center-text pb-600">
           Made by&nbsp;
-          <strong className="underline-accent-400">
-            <a target="_blank" href="https://github.com/dev-math">@dev-math</a>
+          <strong>
+            <Link isExternal target="_blank" href="https://github.com/dev-math">
+              @dev-math
+            </Link>
           </strong>
         </p>
       </div>

@@ -1,18 +1,16 @@
 import React from "react";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+import { MainLayout } from "@/components/Layout/MainLayout";
 
-const About = () => {
+export const About = () => {
   return (
-    <>
-      <Header />
+    <MainLayout>
       <main>
         <section>
           <div className="container | pt-900">
             <h1 className="fs-primary-heading inline font-heading caps">
               Archive&nbsp;
             </h1>
-            <h2 className="fs-secondary-heading inline font-heading caps">
+            <h2 className="fs-secondary-heading inline-block font-heading caps">
               The library
             </h2>
             <p className="text-padding">
@@ -52,9 +50,6 @@ const About = () => {
           </div>
         </section>
       </main>
-      <Footer />
-    </>
+    </MainLayout>
   );
 };
-
-export { About };

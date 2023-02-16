@@ -1,8 +1,8 @@
 import React from "react";
 
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+import { MainLayout } from "@/components/Layout/MainLayout";
+import { Button } from "@/components/Elements";
 
 import bookImg from "./book.png";
 
@@ -10,10 +10,9 @@ import "@/assets/bottom-left-decoration.css";
 import "@splidejs/react-splide/css";
 import "./Home.css";
 
-const Home = () => {
+export const Home = () => {
   return (
-    <>
-      <Header />
+    <MainLayout>
       <main>
         <section>
           <div className="container">
@@ -22,7 +21,7 @@ const Home = () => {
                 <h1 className="fs-primary-heading inline font-heading caps">
                   Archive&nbsp;
                 </h1>
-                <h2 className="fs-secondary-heading inline font-heading caps">
+                <h2 className="fs-secondary-heading inline-block font-heading caps">
                   The library
                 </h2>
                 <p>
@@ -31,7 +30,7 @@ const Home = () => {
                   A collection or group of collections of books and/or other
                   print or nonprint materials organized and maintained for use
                 </p>
-                <button className="btn mt-700 w-full">Explore Catalogue</button>
+                <Button className="w-full">Explore Catalogue</Button>
               </div>
 
               <Splide aria-label="Top treding Images">
@@ -64,10 +63,6 @@ const Home = () => {
           </div>
         </section>
       </main>
-
-      <Footer />
-    </>
+    </MainLayout>
   );
 };
-
-export { Home };

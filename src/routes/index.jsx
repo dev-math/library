@@ -2,9 +2,9 @@ import React from "react";
 
 import { useRoutes, BrowserRouter } from "react-router-dom";
 
-import { Home } from "@/pages/Home";
-import { About } from "@/pages/About";
-import { Login } from "@/pages/Login";
+import { Home, About } from "@/features/misc";
+import { AuthRoutes } from "@/features/auth";
+import Teste from "@/features/books/components";
 
 const Routes = () => {
   return useRoutes([
@@ -14,20 +14,13 @@ const Routes = () => {
     },
     {
       path: "/about",
-      element: <About />
+      element: <About />,
     },
     {
-      path: "/browse",
-      element: <h1>Browse</h1>,
+      path: "/search",
+      element: <Teste />,
     },
-    {
-      path: "/profile",
-      element: <h1>Profile</h1>,
-    },
-    {
-      path: '/login',
-      element: <Login />
-    }
+    ...AuthRoutes,
   ]);
 };
 
