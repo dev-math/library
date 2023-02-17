@@ -5,10 +5,10 @@ import { login } from '@/features/auth';
 export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
-  const [authenticated, setAuthenticated] = useState(true);
+  const [authenticated, setAuthenticated] = useState(false);
 
-  const handleLogin = (email, password) => {
-    const response = login(email, password);
+  const handleLogin = async (email, password) => {
+    const response = await login(email, password);
     storage.setToken(response.token);
     setAuthenticated(true);
   };
