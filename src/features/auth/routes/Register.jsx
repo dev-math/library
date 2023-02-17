@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Layout } from "../components/Layout";
 import { Button, Link } from "@/components/Elements";
 import { Form, InputField } from "@/components/Form";
-import { signUp } from "../api";
+import { signUp } from "../api/signUp";
 
 export const Register = () => {
   const navigate = useNavigate();
