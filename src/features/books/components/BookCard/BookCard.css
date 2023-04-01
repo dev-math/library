@@ -1,0 +1,30 @@
+ .bg-book-fallback{
+    background: linear-gradient(35deg, #ffe5d9, #ffcad4, #f4acb7, #9d8189);
+    background-size: 200% 100%;
+
+    -webkit-animation: BookCoverAnimation 2s ease infinite;
+    -moz-animation: BookCoverAnimation 2s ease infinite;
+    -o-animation: BookCoverAnimation 2s ease infinite;
+    animation: BookCoverAnimation 2s ease infinite;
+}
+
+@-webkit-keyframes BookCoverAnimation {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@-moz-keyframes BookCoverAnimation {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@-o-keyframes BookCoverAnimation {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+@keyframes BookCoverAnimation {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}

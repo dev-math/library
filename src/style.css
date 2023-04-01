@@ -206,6 +206,14 @@ strong {
   color: white;
 }
 
+.fill-white {
+  fill: white;
+}
+
+.fill-red {
+  fill: #b3001b;
+}
+
 .text-accent-700 {
   color: var(--clr-accent-700);
 }
@@ -264,6 +272,14 @@ strong {
   display: inline-block;
 }
 
+.grid {
+  display: grid;
+}
+
+.grid-cols-8 {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
 .flex {
   display: flex;
 }
@@ -290,6 +306,10 @@ strong {
 
 .w-10 {
   width: 2.5em;
+}
+
+.w-fit {
+  width: fit-content;
 }
 
 .w-full {
@@ -337,6 +357,11 @@ strong {
   padding-right: var(--size-300);
 }
 
+.px-900 {
+  padding-left: var(--size-900);
+  padding-right: var(--size-900);
+}
+
 .p-200 {
   padding: var(--size-200);
 }
@@ -361,6 +386,14 @@ strong {
   padding-top: var(--size-900);
 }
 
+.gap-400 {
+  gap: var(--size-400);
+}
+
+.gap-600 {
+  gap: var(--size-600);
+}
+
 .appearance-none {
   appearance: none;
 }
@@ -371,6 +404,12 @@ strong {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .drop-shadow {
@@ -394,4 +433,21 @@ strong {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.aspect-book {
+  aspect-ratio: 1 / 1.6;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

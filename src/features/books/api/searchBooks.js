@@ -1,6 +1,4 @@
-import axios from '@/lib/axios';
+import axios from "@/lib/axios";
 
-export const searchBooks = async (query) => {
-  const response = await axios.post(`/search?q=${query}`);
-  return response;
-};
+export const searchBooks = async (query, pageNumber) =>
+  await axios.get(`/search?q=${query}&limit=25&page=${pageNumber}`);

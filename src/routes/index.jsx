@@ -4,7 +4,7 @@ import { useRoutes, BrowserRouter } from "react-router-dom";
 
 import { Home, About } from "@/features/misc";
 import { AuthRoutes } from "@/features/auth";
-import Teste from "@/features/books/components";
+import { BooksRoutes } from "@/features/books";
 
 const Routes = () => {
   return useRoutes([
@@ -16,11 +16,8 @@ const Routes = () => {
       path: "/about",
       element: <About />,
     },
-    {
-      path: "/search",
-      element: <Teste />,
-    },
     ...AuthRoutes,
+    ...BooksRoutes,
   ]);
 };
 
